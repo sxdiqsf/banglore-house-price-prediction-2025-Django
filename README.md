@@ -5,7 +5,7 @@
 ![Machine Learning](https://img.shields.io/badge/Model-Linear%20Regression-orange.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Status](https://img.shields.io/badge/Status-Active-success.svg)
-
+![kaggle](https://www.kaggle.com/sydsxdiq)
 ---
 
 ## 📘 Overview
@@ -54,6 +54,3 @@ This project demonstrates **end-to-end machine learning deployment**, from data 
 6. **Retraining** – Admin clicks **Retrain Model**; script fetches updated data, retrains the model, and updates the saved version.
 
 ---
-
-## MY KAGGLE
-![kaggle](https://www.kaggle.com/sydsxdiq)

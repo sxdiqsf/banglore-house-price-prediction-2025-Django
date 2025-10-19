@@ -1,0 +1,56 @@
+{% extends 'application/base.html' %}
+{% block content %}
+<!-- <div class="listing-heading">
+    <h2>house listing</h2>
+</div> -->
+<div class="container mt-5">
+    <div class="row justify-content-center mb-3">
+        <div class="col-md-12 text-center mx-auto">
+            <h2 class="fw-bold">🏠 House Listings</h2>
+            <hr class="w-50 mx-auto mb-4">
+            <p>Total no. of house are: {{house_count}}</p>
+        </div>
+    </div>
+
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <thead class="table-dark">
+                <tr>
+                    <th>Area (sq.ft)</th>
+                    <th>Location</th>
+                    <th>BHK</th>
+                    <th>Bath</th>
+                    <th>Balcony</th>
+                    <th>Parking</th>
+                    <th>Furnishing</th>
+                    <th>Property Type</th>
+                    <th>Age (yrs)</th>
+                    <th>Price (₹)</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                {% for h in house %}
+                <tr>
+                    <td>{{ h.area }}</td>
+                    <td>{{ h.location }}</td>
+                    <td>{{ h.bhk }}</td>
+                    <td>{{ h.bath }}</td>
+                    <td>{{ h.balcony }}</td>
+                    <td>{{ h.parking }}</td>
+                    <td>{{ h.furnishing }}</td>
+                    <td>{{ h.property_type }}</td>
+                    <td>{{ h.age }}</td>
+                    <td>{{ h.price|floatformat:0 }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="10" class="text-center text-muted">No data available</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+
+{% endblock %}

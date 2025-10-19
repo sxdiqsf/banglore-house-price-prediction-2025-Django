@@ -1,0 +1,20 @@
+{%extends 'application/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+    <div class="main-container">
+        <div class="topbar"> 
+            <h1>Predict Your New House Price</h1>
+        </div>
+        <form method="post">
+            {%csrf_token%}
+            {{form|crispy}}
+            <button type="submit" class="btn btn-primary">predict</button>
+        </form>
+        {% if prediction %}
+            <div class="alert alert-success mt-3">
+                <h4>Estimated Price: ₹ {{ prediction }}</h4>
+            </div>
+        {% endif %}
+    </div>
+    
+{%endblock%}

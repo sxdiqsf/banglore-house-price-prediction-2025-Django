@@ -1,0 +1,15 @@
+{%extends 'application/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+    <div class="main-container">
+        <div class="topbar"> 
+            <h1>add new data to train</h1>
+        </div>
+        <form method="post">
+            {%csrf_token%}
+            {{form|crispy}}
+            <button type="submit" class="btn btn-primary">submit and train</button>
+        </form>
+    </div>
+    
+{%endblock%}

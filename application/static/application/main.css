@@ -1,0 +1,84 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    height: 80px;
+    background: rgb(154, 8, 127);
+    display: flex;
+    flex-direction: row;
+}
+.navbar-logo{
+    width:30%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    max-width: 90%;
+    max-height: 70px;
+    height: auto;
+}
+
+.navbar-links{
+    width:70%;
+    height:80%;
+    margin: 0;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-links a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 8px 16px;
+}
+
+.navbar-links .active,
+.navbar-links a:hover{
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 16px;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    border-radius: 16px;
+}
+.main-container{
+    width: 80%;
+    box-shadow: 0 4px 16px plum;
+    padding: 32px;
+    border-radius: 16px;
+}
+.topbar{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.listing-heading{
+    width: 80%;
+    height: 10%;
+    box-shadow: 0 4px 16px plum;
+    padding: 32px;
+    border-radius: 16px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 16px;
+}

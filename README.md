@@ -54,3 +54,6 @@ This project demonstrates **end-to-end machine learning deployment**, from data 
 6. **Retraining** – Admin clicks **Retrain Model**; script fetches updated data, retrains the model, and updates the saved version.
 
 ---
+
+## MY KAGGLE
+![kaggle](https://www.kaggle.com/sydsxdiq)
